@@ -26,7 +26,7 @@ var onDefault=function(req, res){
              "</ol>");
 };
 app.get("/",onDefault);  // Request handler functions are registered
-app.get("/api/products", OnData);
+app.get("/api/products", onData);
 app.get("/aboutus",onAboutUs);  // Request handler functions are registered
 var server=app.listen(8081);
 console.log("Server is running on port 8081");
